@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <input type="text" name="txtna" id="txtna">
+    <input type="button" value="Verificar" onclick=ver()>
+    <div id='res'>Blabla</div>
+    <script> 
+        var txtna = window.document.getElementById('txtna')
+      
+
+        function ver(){ 
+            var pais = ""
+            if (txtna == 'Brasil'){pais = "Você é br"}
+                
+            document.querySelector('div#res').innerHTML = pais
+            
+        }
+    </script>
+</body>
+</html>
